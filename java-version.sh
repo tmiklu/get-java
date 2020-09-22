@@ -1,5 +1,11 @@
 #!/bin/bash
 
+#
+##
+### find current java version in running pods - openshift cluster
+##
+#
+
 NAMESPACE=$1
 
 if [ $# -eq 1 ]
