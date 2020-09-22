@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# get all available projects
-NAMESPACE=$(oc get project | egrep -v '^NAME' | awk '{ print $1}')
-
 export STATUS=Running
 
 while read line 
