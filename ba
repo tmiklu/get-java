@@ -15,6 +15,3 @@ do
    oc exec -t ${line} -- java -version | - 2> /dev/null
  fi
 done < <(oc get pods | grep -v NAME | awk -v LIMIT=${STATUS} '($3>=LIMIT) { print $1 }')
-
-#while read line ; do echo project: $line ; oc get pods --namespace=$line | grep -v ^NAME ; done < <(oc get project | grep -v ^NAME | awk '{ print $1 }' | while read line ; do echo $line ; sleep 1 ; done)
-
