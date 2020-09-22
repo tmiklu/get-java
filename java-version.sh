@@ -4,6 +4,7 @@ if [ $# -eq 1 ]
   then
     exit 0
 else
+    echo -e "usage: ./ba <namespace>"
     exit 1
 fi
 
