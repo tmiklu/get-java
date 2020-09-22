@@ -4,7 +4,7 @@ NAMESPACE=$1
 
 if [ $# -eq 1 ]
   then
-    echo -e "Checking project ${NAMESPACE}..."
+    echo -e "Checking project \033[1;34""m${NAMESPACE}...\033[0m"
 else
     echo -e "usage: ./java-version.sh <namespace>"
     exit 1
